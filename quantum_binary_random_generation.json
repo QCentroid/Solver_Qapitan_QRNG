@@ -1,0 +1,28 @@
+{
+    "list": [
+        {
+            "problem": "Quantum Random Number Generation",
+            "environment": "sandbox",
+            "provider": "simulation",
+            "solver": "local",
+            "limits": {
+                "size":1000
+            },
+            "parameters": {
+                "size": "int"
+            }
+        },
+        {
+            "problem": "Quantum Random Number Generation",
+            "environment": "production",
+            "provider": "ibm",
+            "solver": "qrng",
+            "limits": {
+                "size":1000
+            },
+            "parameters": {
+                "size": "int"
+            }
+        }
+    ]
+}
