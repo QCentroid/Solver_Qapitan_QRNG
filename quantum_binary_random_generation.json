@@ -1,27 +1,27 @@
 {
-    "list": [
+    "problem": "Quantum Random Number Generation",
+    "input_data": {
+        "size": "int"
+    },
+    "solvers": [
         {
-            "problem": "Quantum Random Number Generation",
-            "environment": "sandbox",
-            "provider": "simulation",
-            "solver": "local",
+            "name":"Qapitan_QRNG/QRNG",
+            "provider": "Local",
+            "solver_params": {},
+            "extra_arguments": {
+            },
             "limits": {
                 "size":1000
-            },
-            "parameters": {
-                "size": "int"
             }
         },
         {
-            "problem": "Quantum Random Number Generation",
-            "environment": "production",
-            "provider": "ibm",
-            "solver": "qrng",
+            "name":"Qapitan_QRNG/QRNG",
+            "provider": "IBMQ",
+            "solver_params": {},
+            "extra_arguments": {
+            },
             "limits": {
                 "size":1000
-            },
-            "parameters": {
-                "size": "int"
             }
         }
     ]

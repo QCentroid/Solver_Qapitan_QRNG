@@ -1,7 +1,7 @@
 from qiskit import QuantumCircuit, Aer, execute, IBMQ
 
 
-def run(input_data):
+def run(input_data, solver_params = False, extra_agruments):
     
     size = int(input_data['data']['size'])
 
