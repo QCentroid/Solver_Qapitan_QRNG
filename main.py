@@ -1,18 +1,9 @@
 from qiskit import QuantumCircuit, Aer, execute, IBMQ
 
+def run(input_data, solver_params, extra_arguments):
 
-def run(input_data, solver_params = False, extra_arguments = False):
-    
-    size = int(input_data['data']['size'])
-
-    if(input_data['provider'] == 'simulator'):
-        backend = Aer.get_backend('qasm_simulator')
-        #backend = provider.get_backend('ibmq_qasm_simulator')
-    else:
-        IBMQ.load_account()
-        provider = IBMQ.get_provider()
-        backend = provider.get_backend('ibmq_qasm_simulator')
-
+    size = int(input_data['size'])
+    backend = Aer.get_backend('qasm_simulator')
 
     qc = QuantumCircuit(1)
     qc.h(0)
