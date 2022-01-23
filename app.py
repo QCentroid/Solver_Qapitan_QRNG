@@ -1,12 +1,7 @@
 #########  THIS FILE WILL BE REPLACED  #########
 
-
 input_file_name = "input.json"
 
-################################################
-#########    DO NOT TOUCH FROM HERE    #########
-################################################
-# Input data loader. Container will get data from here
 import json
 with open(input_file_name) as f:
   input_data = json.load(f)
@@ -21,7 +16,3 @@ else:
 import main
 result = main.run(input_data)
 print(result)
-
-################################################
-#########    DO NOT UNTIL FROM HERE    #########
-################################################
