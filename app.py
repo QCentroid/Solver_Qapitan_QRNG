@@ -2,17 +2,29 @@
 
 input_file_name = "input.json"
 
+
 import json
 with open(input_file_name) as f:
   input_data = json.load(f)
 
+data = input_data["data"]
+
 # Optional extra parameters
-if "arguments" in input_data:
-    extra_arguments = input_data['arguments']
+if "extra_arguments" in input_data:
+    extra_arguments = input_data['extra_arguments']
 else:
     extra_arguments = {}
 
+if "solver_params" in input_data:
+    solver_params = input_data['solver_params']
+else:
+    solver_params = {}
+
 
 import main
-result = main.run(input_data)
-print(result)
+
+result = main.run(data, extra_arguments, solver_params)
+
+################################################
+#########    DO NOT UNTIL FROM HERE    #########
+################################################
