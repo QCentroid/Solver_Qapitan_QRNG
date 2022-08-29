@@ -1,5 +1,8 @@
 {
   "data":{
-    "size": 20
+    "size": 10
+  },
+  "extra_arguments":{
+    "format": "decimal"
   }
 }

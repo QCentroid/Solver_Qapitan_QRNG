@@ -23,7 +23,9 @@ else:
 
 import main
 
-result = main.run(data, extra_arguments, solver_params)
+result = main.run(data, solver_params, extra_arguments)
+
+print(result)
 
 ################################################
 #########    DO NOT UNTIL FROM HERE    #########
